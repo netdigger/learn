@@ -1,3 +1,22 @@
+# Problem
+Sometimes our program has this architechure:
+
+1. Exectuable applicaion: A
+2. Static libray: S
+3. A dynamic library: D
+
+S is linked in A. and A dynamic load D in runtime.
+if A function F isn't used by A, but is used by D, 
+there will be an error shows undefined F when D is be loaded.
+
+# solutioin
+There are two solution to solve the problem:
+
+- link S to a dynmac libarary.
+- use some link options. 
+
+The link_symbol shows two samples of the solutions.
+
 # Key notes
 
 ## Link all symbols of archives to target
