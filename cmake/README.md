@@ -2,6 +2,12 @@
 
 1. How to call shell commands in CMake project?
 2. How to create source code in CMake?
+3. How to compile source code to a static library with -fPIC
+
+## Not solved problems
+
+*test.cpp* is compiled three time in this project.
+How to avoid it?
 
 # Notes
 
@@ -43,7 +49,16 @@ So a new target *T* have to be created.
 
 *test.out* depends on target *T*
 
+## SET_PROPERTY
 
+	SET_PROPERTY(TARGET a 
+		PROPERTY POSITION_INDEPENDENT_CODE ON
+	)
+
+Normally, CMake compile all source code which used to archive a static 
+library without *-fPIC*. 
+*SET_PROPERTY* should be used to define the *POSITION_INDEPENDENT_CODE* 
+as *ON*
 
 
 
