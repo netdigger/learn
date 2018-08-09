@@ -2,7 +2,8 @@
 
 1. How to call shell commands in CMake project?
 2. How to create source code in CMake?
-3. How to compile source code to a static library with -fPIC
+3. How to compile source code to a static library with -fPIC?
+4. How to set the output directories of targe?
 
 ## Not solved problems
 
@@ -60,7 +61,13 @@ library without *-fPIC*.
 *SET_PROPERTY* should be used to define the *POSITION_INDEPENDENT_CODE* 
 as *ON*
 
+## SET_TARGET_PROPERTIES
 
+Set the property by the function: 
+
+- *LIBRARY_OUTPUT_DIRECTORY*
+- *STATIC_OUTPUT_DIRECTORY*
+- *RUNTIME_OUTPUT_DIRECTORY*
 
 
 
