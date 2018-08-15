@@ -12,3 +12,7 @@ How to use cmake and some notes
 ## gtest
 
 How to use *const static* type in gtest 
+
+## pthread
+
+How to use pthread in Linux system.
