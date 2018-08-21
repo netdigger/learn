@@ -69,5 +69,11 @@ Set the property by the function:
 - *STATIC_OUTPUT_DIRECTORY*
 - *RUNTIME_OUTPUT_DIRECTORY*
 
+## Create compilation database
+
+	SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+The database can be used by the YouCompelteMe, which is 
+a auto completation plugin in of Vim.
 
 
