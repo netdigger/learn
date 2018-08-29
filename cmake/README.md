@@ -76,4 +76,7 @@ Set the property by the function:
 The database can be used by the YouCompelteMe, which is 
 a auto completation plugin in of Vim.
 
+## Exclude target from ALL
+*EXCLUDE_FROM_ALL* used to exclude a target from all.
 
+    ADD_EXECUTABLE(${UT_NAME} EXCLUDE_FROM_ALL ${DIR_SRCS})
