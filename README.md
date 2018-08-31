@@ -16,3 +16,7 @@ How to use *const static* type in gtest
 ## pthread
 
 How to use pthread in Linux system.
+
+## python
+
+How to dynamically import modules.
