@@ -1,5 +1,8 @@
 # Python Notes
 
+- Dynamically import modules -- `dynamic_load.py`
+- Home directory problem -- `write_file.py`
+
 ## Dynamic import modules
 
 Package _importlib_ is used to load modules dynamically.
@@ -28,3 +31,12 @@ Function _getattr_ is used to return the value of named attribute in module.
 Lastly, the new class object is create by the flowing code:
 
     obj = module_classe()
+
+## Home direcotry
+
+If a path start with "~", it will not be used in open file. 
+So the function `expanduser` must be used to convert the path 
+to absolute path.
+
+    path = os.path.expanduser("~/test.txt")
+
