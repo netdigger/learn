@@ -11,18 +11,15 @@ The directory where modules are saved should be add to the module search path.
     modules_path = "./modules"
     sys.path.append(modules_path)
 
-After that, _importlib.import_module_ can be used to dynamically import modules.
+After that, `importlib.import_modul` can be used to dynamically import modules.
 
     module = importlib.import_module(module_name)
 
-The _module_name_ the the module file name without extent file name. 
-For example, if the module file name is: _module_a.py_, 
-the _module_name_ is _module_a_
+The `module_name` is the the module file name without extent file name. 
+For example, if the module file name is: `module_a.py`, 
+the `module_name` is `module_a`:w
 
-Normally, if the module has only one class, the class name is the first elements
-in attribute list. 
-
-    class_name = dir(module)[0]
+Normally, `dir(module)` is used to list all attributes of a module. 
 
 Function _getattr_ is used to return the value of named attribute in module.
 
